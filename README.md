@@ -1,1 +1,1 @@
-CS124 Winter '25
+Repo for drafting CS124 labs (Winter 2025)
