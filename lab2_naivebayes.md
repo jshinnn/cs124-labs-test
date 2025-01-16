@@ -1,6 +1,6 @@
 # Lab 2: Naive Bayes, Sentiment, and Harms of Classification (Week 3)
 
-<sub><sup>*written by uma phatak, veronica rivera, & jeong shin, cs124 staff team, winter 2024/25*</sup></sub>
+<sub><sup>*written by uma phatak, veronica rivera & jeong shin, cs124 staff team, winter 2024/25*</sup></sub>
 
 ## Part 1: Naive Bayes review
 
@@ -16,7 +16,7 @@ We want to build a naive bayes sentiment classifier using add-1 smoothing, as de
 
 **Test Set**
 
-    friendly bears cross the water
+    the friendly bears rest
 
 Answer the questions below given the sets above.
 
@@ -34,15 +34,15 @@ We will now go back to the whole class and discuss group answers for Part 1 in a
 
 For the following problem, please choose a group facilitator/representative who will also take notes on your discussion.
 
-6. Imagine you’re working for Reddit. Toxic comments are a real problem, so you decide to build a sentiment classifier using Naive Bayes and an automoderator that deletes negative comments. Your classifier trains on these examples:
+6. Imagine you’re working for Reddit. Toxic comments are a real problem, so you decide to build a sentiment classifier using Naive Bayes and an automoderator that deletes negative comments. Your classifier trains on the same training set from Part 1:
 
 **Training Set**
 
     - the dangerous bears
     - bears destroyed the yard
-    + beautiful redwood trees
+    + the beautiful redwood trees
 
-   The week after training, the Big Game (between Stanford and Cal) happens. Users on /r/bayarea are excited. Alice, a Cal student, wants to support her team and comments `“Go bears!”`. Bob, a Stanford student, wants to support his team and comments `“Go trees!”`. Answer the following questions. Note that parts (a) through (c) should be more rapid-fire answers, whereas we encourage lengthier discussions for parts (d) and (e).
+   The week after training, the Big Game (between Stanford and Cal) happens. Users on /r/bayarea are excited. Alice, a Cal student, wants to support her team and comments `“Go bears!”`. Bob, a Stanford student, wants to support his team and comments `“Go trees!”`. Answer the following questions. Please keep your responses to parts (a) through (c) concise, while we encourage more in-depth discussions for parts (d) and (e).
    <ol type="a">
       <li>Whose comment, Alice's or Bob's, is deleted by your automoderator? </li>
       <li>What kind of harm from the lecture is experienced by the group whose comments are getting deleted?</li>
@@ -53,11 +53,3 @@ For the following problem, please choose a group facilitator/representative who 
 
 
    We will now go back to the whole class and discuss group answers for Part 2 in a plenary session.
-
-## Part 3: Performance Disparities
-
-For the last problem, please continue taking notes on your discussion.
-
-7. Your manager at Reddit comes to you and asks you to completely scrap the Naïve Bayes sentiment classifier in the automoderation system. Instead, you are to use an entirely new, state of the art, *toxicity* classifier that is trained on the entire internet. Your manager believes this will solve all the harms introduced by the Naïve Bayes classifier. But you know otherwise. To convince your manager that things aren’t so simple, describe a subreddit where harm might be more likely to occur because of a performance disparity in the general classifier and explain why. Be prepared to share. 
-
-We will now go back to the whole class and discuss group answers for Part 3 in a final plenary session.
