@@ -1,6 +1,6 @@
 # Lab 2: Naive Bayes, Sentiment, and Harms of Classification (Week 3)
 
-<sub><sup>*written by uma phatak, veronica rivera & jeong shin, cs124 staff team, winter 2024/25*</sup></sub>
+<sub><sup>*written by uma phatak, veronica rivera & jeong shin, cs124 staff team*</sup></sub>
 
 ## Part 1: Naive Bayes review
 
