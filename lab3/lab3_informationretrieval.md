@@ -18,7 +18,7 @@ You want to manually verify whether Doc1 or Doc2 will be ranked higher for the o
 
 You will use the following equation:
 
-   ![tf-idf simplified equation](tf_idf_simple_equation.png)
+   ![tf-idf simplified equation](lab3/tf_idf_simple_equation.png)
 
 
 * Note that this is a **simplified version** of the regular tf-idf cosine score. The regular tf-idf cosine score is explained in the ***BROKEN LINK*** 
@@ -46,11 +46,11 @@ Here's a quick refresher on the definition of precision and recall, from the [Ju
 
 Precision measures the percentage of the items that the system detected (i.e., the system labeled as positive) that are in fact positive. It asks the question, "_Out of everything the model identified as positive, how many were actually positive?_ Precision is defined as:
 
-   ![precision-defn](precision_equation.png)
+   ![precision-defn](lab3/precision_equation.png)
 
 Recall measures the percentage of items actually present in the input that were correctly identified by the system. It asks the question, _"Out of all the actual positives, how many did the model catch?"_ If there are false negatives (positives that the model missed), recall will decrease. Recall is defined as:
 
-   ![recall-defn](recall_equation.png)
+   ![recall-defn](lab3/recall_equation.png)
 
 Now, imagine you have a more sophisticated IR system than the one in Part 1, with far more query terms and documents. You are tasked with evaluating its performance and how it might be used for different searches. 
 
