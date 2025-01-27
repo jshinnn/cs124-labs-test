@@ -81,6 +81,8 @@ If you prioritize precision, your classifier will minimize *false positives*, me
 
 If you prioritize recall, your classifier will minimize *false negatives*, meaning it will try not to mis-identify toxic speech as benign. This means your classifier will correctly classify most of the existing toxic comments as toxic, but might be over-eager, and classify benign comments as toxic as well.
 
+7. Discuss the tradeoff between precision and recall in the hate speech classifier, which you would prioritize, and why.
+
 Now that you’ve played around with definitions of precision and recall, it’s time to come up with your own scenarios.
 
 8. Write a scenario related to an IR or broader NLP task where you would prioritize *precision* over recall. Make sure you define what a “true positive” is, as in the examples above.
