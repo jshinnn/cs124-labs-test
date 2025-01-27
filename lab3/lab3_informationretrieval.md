@@ -21,7 +21,8 @@ You will use the following equation:
    ![tf-idf simplified equation](tf_idf_simple_equation.png)
 
 
-* Note that this is a **simplified version** of the regular tf-idf cosine score. The regular tf-idf cosine score is explained in the [Jurafsky textbook](https://web.stanford.edu/~jurafsky/slpdraft/14.pdf) (Chapter 14, pages 4-6). (The simplified version we are having you compute is sometimes called the ltc.lnn weighting variation, using the SMART notation defined in the [Manning textbook](https://site.ebrary.com/lib/stanford/docDetail.action?docID=10240274), although you don’t have to remember that). This version omits all the grayed out components from the regular score.
+* Note that this is a **simplified version** of the regular tf-idf cosine score. The regular tf-idf cosine score is explained in the ***BROKEN LINK*** 
+ [Jurafsky textbook](https://web.stanford.edu/~jurafsky/slpdraft/14.pdf) (Chapter 14, pages 4-6). (The simplified version we are having you compute is sometimes called the ltc.lnn weighting variation, using the SMART notation defined in the [Manning textbook](https://site.ebrary.com/lib/stanford/docDetail.action?docID=10240274), although you don’t have to remember that). This version omits all the grayed out components from the regular score.
 
 Here is an [example](https://docs.google.com/spreadsheets/d/1GI3yJCODven4HAY--tGCpOVPGvcamSjYWKDRbjfzFhQ/edit?usp=sharing) of how to compute the *regular* tf-idf score for the example outlined in the textbook on page 5 of Chapter 14. This example uses Excel formulas to implement the math between columns (e.g. tf-idf is the product of the tf and idf columns).
 
@@ -41,7 +42,17 @@ We will now go back to the whole class and discuss group answers for Part 1 in a
 
 For this next part, have someone take notes for your group so that you are prepared to share. 
 
-Imagine you have a more sophisticated IR system than the one in Part 1, with far more query terms and documents. You are tasked with evaluating its performance and how it might be used for different searches. 
+Here's a quick refresher on the definition of precision and recall, from the [Jurafsky textbook](https://web.stanford.edu/~jurafsky/slp3/4.pdf) (Chapter 4, page 12):
+
+Precision measures the percentage of the items that the system detected (i.e., the system labeled as positive) that are in fact positive. It asks the question, "_Out of everything the model identified as positive, how many were actually positive?_ Precision is defined as:
+
+   ![precision-defn](precision_equation.png)
+
+Recall measures the percentage of items actually present in the input that were correctly identified by the system. It asks the question, _"Out of all the actual positives, how many did the model catch?"_ If there are false negatives (positives that the model missed), recall will decrease. Recall is defined as:
+
+   ![recall-defn](recall_equation.png)
+
+Now, imagine you have a more sophisticated IR system than the one in Part 1, with far more query terms and documents. You are tasked with evaluating its performance and how it might be used for different searches. 
 
 For a particular query, your system returns 8 relevant documents and 10 non-relevant documents. There are a total of 20 relevant documents in the collection.
 
@@ -69,8 +80,6 @@ You are trying to decide whether to prioritize precision vs. recall for your sys
 If you prioritize precision, your classifier will minimize *false positives*, meaning it will try not to mis-identify benign speech as toxic. This means the comments you classify as toxic are likely to be actually toxic – but you might miss some toxic comments.
 
 If you prioritize recall, your classifier will minimize *false negatives*, meaning it will try not to mis-identify toxic speech as benign. This means your classifier will correctly classify most of the existing toxic comments as toxic, but might be over-eager, and classify benign comments as toxic as well.
-
-7. Discuss the tradeoff between precision and recall in the hate speech classifier, which you would prioritize, and why.
 
 Now that you’ve played around with definitions of precision and recall, it’s time to come up with your own scenarios.
 
