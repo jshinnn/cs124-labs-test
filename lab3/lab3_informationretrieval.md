@@ -1,6 +1,6 @@
 # Week 5: Group Exercises on Information Retrieval
 
-<sub><sup>*created by jasper mcavity, uma phatak, & veronica rivera, cs124 staff team, winter 2024*</sup></sub>
+<sub><sup>*created by cs124 staff team, winter 2025*</sup></sub>
 
 ## Part 1: IR with tf-idf weighting
 
@@ -58,14 +58,6 @@ For a particular query, your system returns 8 relevant documents and 10 non-rele
 
 5. What is the precision of the system on this search, and what is its recall? 
 
-You know that people will be using your IR system primarily to search for treatments to medical ailments they face. You are trying to decide whether you should improve the recall of your system. Suppose we define a true positive document as: a document which does not just describe the relevant ailment, but also, which contains accurate treatment information for this ailment. 
-
-6. Given the above context, answer the following and be prepared to explain:
-   <ol type="a">
-      <li>Why might you prioritize high precision in this task?</li>
-      <li>Why might you prioritize high recall in this task?</li>
-   </ol>
-
 Precision and recall are relevant metrics not just in IR tasks, but also, in broader NLP tasks. These metrics can have significant consequences not just on the performance of your system, but also on the social impact of your system. For example, let’s consider the role of precision and recall when evaluating a hate speech classifier.
 
 Suppose you implement a hate speech classifier which classifies a Reddit comment as either “toxic” or “benign”. You define true positives, true negatives, false positives, and false negatives as follows (this is sometimes called a confusion matrix):
@@ -85,8 +77,6 @@ If you prioritize recall, your classifier will minimize *false negatives*, meani
 
 Now that you’ve played around with definitions of precision and recall, it’s time to come up with your own scenarios.
 
-8. Write a scenario related to an IR or broader NLP task where you would prioritize *precision* over recall. Make sure you define what a “true positive” is, as in the examples above.
-
-9. Write a scenario related to an IR or broader NLP task where you would prioritize *recall* over precision. Make sure you define what a “true positive” is, as in the examples above.
+8. Write a scenario related to an IR or broader NLP task where you would need to prioritize *either* precision over recall or recall over precision. Clearly define what constitutes a “true positive” in your scenario, as in the examples above. EXplain why the chosen metric is more important. Some domains you might consider writing scenarios about include: criminal justice applications (like recidivism risk assessments), medical diagnoses, or loan approval systems. 
 
 We will now go back to the whole class and discuss group answers for Part 2 in a plenary session.
