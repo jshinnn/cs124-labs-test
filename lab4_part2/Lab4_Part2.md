@@ -1,5 +1,7 @@
 # Week 9: Collaborative Filtering & Ethical Use of LLMs
 
+<sub><sup>*written by veronica rivera & jeong shin, cs124 staff team, winter 2025*</sup></sub>
+
 Agenda:
  - Collaborative Filtering
  - LLM Ethics
